@@ -1,0 +1,2 @@
+1488339577024,vid1,ai1,u1,s1,Web,vst,1488339574083,10.10.0.21,cn,中国,浙江,杭州,www.any1.com,/,utm_source=source1,,source1,,,,www.rf1.com/home.html,www.rf1.com,,av1,ua1,bw1,bwv1,os1,osv1,,,,,,,,1024*768,1488339580,,,,1,1,,,
+1488339578024,vid2,ai1,u2,s2,Web,vst,1488339575083,10.10.0.22,cn,中国,北京,北京,www.any2.com,/,utm_term=term1,,,,term1,,www.rf1.com/home.html,www.rf1.com,,av1,ua1,bw1,bwv1,os1,osv1,,,,,,,,1024*768,1488339581,,,,2,2,,,

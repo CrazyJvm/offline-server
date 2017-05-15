@@ -1,0 +1,2 @@
+arid1,点击,clck,1488339580087,ai1,www.any1.com,/action.html,/home.html,pid1,ps101,ps201, , , , , , , , ,1,1,1,0,0, , ,s1,53176295f30aec773b6298eea2d801f6
+prid1,首页,page,1488339577087,ai1,www.any1.com,/,/home.html,pid1,ps101,ps201, , , , , , , , ,0,1,1,0,0, , ,s1,53176295f30aec773b6298eea2d801f6

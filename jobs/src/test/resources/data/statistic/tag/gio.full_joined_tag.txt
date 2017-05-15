@@ -1,0 +1,4 @@
+arid1,点击,clck,1488339580087,ai1,www.any1.com,/action.html,/home.html,pid1,ps101,ps201, , , , , , , , ,1,1,1,0,0, , ,s1,53176295f30aec773b6298eea2d801f6
+arid1,点击,clck,1488339583087,ai1,www.any1.com,/action.html,/home.html,pid2,ps101,ps201, , , , , , , , ,3,1,1,0,0, , ,s1,53176295f30aec773b6298eea2d801f6
+prid1,首页,page,1488339577087,ai1,www.any1.com,/,/home.html,pid1,ps101,ps201, , , , , , , , ,2,1,1,0,0,pg1, ,s1,53176295f30aec773b6298eea2d801f6
+prid1,首页,page,1488339578087,ai1,www.any3.com,/,/home3.html,pid3,ps103,ps203, , , , , , , , ,2,3,2,0,0,pg2, ,s2,53176295f30aec773b6298eea2d801f6
