@@ -34,7 +34,7 @@ class SubmitterSpec(_system: ActorSystem) extends TestKit(_system)
   private val config = ConfigFactory.load("application-test")
   private val jobConfigs = ConfigUtils.parseJobConfigs(config)
   implicit val timeZone: ZoneId = ConfigUtils.timeZone(config)
-  private val sqlService = new SqlService(config)
+//  private val sqlService = new SqlService(config)
 
   private val topic: String = "test-topic"
   private val group: String = "test-group"
@@ -78,11 +78,13 @@ class SubmitterSpec(_system: ActorSystem) extends TestKit(_system)
     zkClient.close()
     zookeeper.shutdown()
 
-    sqlService.close()
+//    sqlService.close()
     TestKit.shutdownActorSystem(system)
   }
 
   test("submitter uninitialized, construct correctly from jobConfigs") {
+    val sqlService = new SqlService(config)
+
     val submitter = TestFSMRef(new Submitter(
       config.getConfig("app.submitter"), jobConfigs, sqlService, kafkaService))
 
@@ -111,9 +113,13 @@ class SubmitterSpec(_system: ActorSystem) extends TestKit(_system)
 
     submitter ! SubmitJobConfigList
     expectMsg(jobConfigs)
+
+    sqlService.close()
   }
 
   test("submitter Initialized will jump to Active state and schedule jobs") {
+    val sqlService = new SqlService(config)
+
     val submitter = TestFSMRef(new Submitter(
       config.getConfig("app.submitter"), jobConfigs, sqlService, kafkaService))
 
@@ -140,7 +146,7 @@ class SubmitterSpec(_system: ActorSystem) extends TestKit(_system)
     submitter ! Flush
     val expectResult1 = ScheduledJobGraph("test-hourly-jobs1",
       startPos, stopPos, jobInfo1.jobGraph, jobInfo1.terminalJob)
-    expectMsg(expectResult1)
+    expectMsg(10.seconds, expectResult1)
 
     submitter ! SubmitJobList
     // 此时test-hourly-jobs1已经提交，但是test-hourly-jobs2还未提交
@@ -166,6 +172,8 @@ class SubmitterSpec(_system: ActorSystem) extends TestKit(_system)
     val expectResult4 = ScheduledJobGraph("test-hourly-jobs2",
       startPos, stopPos, jobInfo2.jobGraph, jobInfo2.terminalJob)
     expectMsg(expectResult4)
+
+    sqlService.close()
   }
 
 

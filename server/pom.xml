@@ -70,13 +70,13 @@
         </dependency>
 
         <!--test-->
-        <!--<dependency>-->
-            <!--<groupId>io.growing.offline</groupId>-->
-            <!--<artifactId>api</artifactId>-->
-            <!--<version>0.3.0</version>-->
-            <!--<type>test-jar</type>-->
-            <!--<scope>test</scope>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>io.growing.offline</groupId>
+            <artifactId>api</artifactId>
+            <version>0.3.0</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.scalatest</groupId>
             <artifactId>scalatest_${scala.artifact.version}</artifactId>

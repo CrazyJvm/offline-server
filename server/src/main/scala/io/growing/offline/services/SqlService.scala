@@ -183,7 +183,6 @@ class SqlService(config: Config)(implicit context: ExecutionContextExecutor) {
     db.run(jobTable.filter(_.id === id).result.headOption)
   }
 
-
   /************************ offline_jobs_done ************************/
 
   // 该表用于历史纪录，可用于查询job信息

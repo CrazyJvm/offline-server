@@ -21,7 +21,7 @@ abstract class SparkJob(jobContext: BaseJobContext, conf: Map[String, String]) e
   protected implicit lazy val timeZone: String = jobContext.timeZone
 
   private val originLocalProperty: mutable.HashMap[String, String] = mutable.HashMap.empty
-  private val sc = jobContext.session.sparkContext
+  private lazy val sc = jobContext.session.sparkContext
   private val descriptionKeys = jobContext.descriptionKeys ++ Set("startPos", "stopPos")
 
   def run(): SparkJobResult = {
