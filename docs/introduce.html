@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>readme</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(197, 200, 198); overflow: auto; background-color: rgb(29, 31, 33); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(155, 160, 157); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: white; }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(155, 160, 157); border-color: rgb(67, 72, 76); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(67, 72, 76); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(67, 72, 76); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(48, 51, 55); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(39, 41, 44); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(67, 72, 76) rgb(67, 72, 76) rgb(53, 57, 60); background-color: rgb(48, 51, 55); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top: 1px solid rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview code { text-shadow: none; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #1d1f21;
+  color: #c5c8c6;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(197, 200, 198, 0.2);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(197, 200, 198, 0.2);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(197, 200, 198, 0.1);
+}
+pre.editor-colors .gutter {
+  background-color: #292c2f;
+}
+pre.editor-colors .gutter .cursor-line {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+pre.editor-colors .line-number.cursor-line-no-selection {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #fba0e3;
+}
+pre.editor-colors .invisible {
+  color: #c5c8c6;
+}
+pre.editor-colors .cursor {
+  border-color: white;
+}
+pre.editor-colors .selection .region {
+  background-color: #444;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #f8de7e;
+  margin-top: -1px;
+  opacity: .7;
+}
+pre.editor-colors .syntax--source.syntax--gfm {
+  color: #999;
+}
+pre.editor-colors .syntax--gfm .syntax--markup.syntax--heading {
+  color: #eee;
+}
+pre.editor-colors .syntax--gfm .syntax--link {
+  color: #555;
+}
+pre.editor-colors .syntax--gfm .syntax--variable.syntax--list,
+pre.editor-colors .syntax--gfm .syntax--support.syntax--quote {
+  color: #555;
+}
+pre.editor-colors .syntax--gfm .syntax--link .syntax--entity {
+  color: #ddd;
+}
+pre.editor-colors .syntax--gfm .syntax--raw {
+  color: #aaa;
+}
+pre.editor-colors .syntax--markdown .syntax--paragraph {
+  color: #999;
+}
+pre.editor-colors .syntax--markdown .syntax--heading {
+  color: #eee;
+}
+pre.editor-colors .syntax--markdown .syntax--raw {
+  color: #aaa;
+}
+pre.editor-colors .syntax--markdown .syntax--link {
+  color: #555;
+}
+pre.editor-colors .syntax--markdown .syntax--link .syntax--string {
+  color: #555;
+}
+pre.editor-colors .syntax--markdown .syntax--link .syntax--string.syntax--title {
+  color: #ddd;
+}
+.syntax--comment {
+  color: #7C7C7C;
+}
+.syntax--entity {
+  color: #FFD2A7;
+}
+.syntax--entity.syntax--name.syntax--type {
+  text-decoration: underline;
+  color: #FFFFB6;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #9B5C2E;
+}
+.syntax--keyword {
+  color: #96CBFE;
+}
+.syntax--keyword.syntax--control {
+  color: #96CBFE;
+}
+.syntax--keyword.syntax--operator {
+  color: #EDEDED;
+}
+.syntax--storage {
+  color: #CFCB90;
+}
+.syntax--storage.syntax--modifier {
+  color: #96CBFE;
+}
+.syntax--constant {
+  color: #99CC99;
+}
+.syntax--constant.syntax--numeric {
+  color: #FF73FD;
+}
+.syntax--variable {
+  color: #C6C5FE;
+}
+.syntax--invalid.syntax--deprecated {
+  text-decoration: underline;
+  color: #FD5FF1;
+}
+.syntax--invalid.syntax--illegal {
+  color: #FD5FF1;
+  background-color: rgba(86, 45, 86, 0.75);
+}
+.syntax--string .syntax--source,
+.syntax--string .syntax--meta.syntax--embedded.syntax--line {
+  color: #EDEDED;
+}
+.syntax--string .syntax--punctuation.syntax--section.syntax--embedded {
+  color: #00A0A0;
+}
+.syntax--string .syntax--punctuation.syntax--section.syntax--embedded .syntax--source {
+  color: #00A0A0;
+}
+.syntax--string {
+  color: #A8FF60;
+}
+.syntax--string .syntax--constant {
+  color: #00A0A0;
+}
+.syntax--string.syntax--regexp {
+  color: #E9C062;
+}
+.syntax--string.syntax--regexp .syntax--constant.syntax--character.syntax--escape,
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded,
+.syntax--string.syntax--regexp .syntax--string.syntax--regexp.syntax--arbitrary-repetition {
+  color: #FF8000;
+}
+.syntax--string.syntax--regexp.syntax--group {
+  color: #C6A24F;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.syntax--string.syntax--regexp.syntax--character-class {
+  color: #B18A3D;
+}
+.syntax--string .syntax--variable {
+  color: #8A9A95;
+}
+.syntax--support {
+  color: #FFFFB6;
+}
+.syntax--support.syntax--function {
+  color: #DAD085;
+}
+.syntax--support.syntax--constant {
+  color: #FFD2A7;
+}
+.syntax--support.syntax--type.syntax--property-name.syntax--css {
+  color: #EDEDED;
+}
+.syntax--source .syntax--entity.syntax--name.syntax--tag,
+.syntax--source .syntax--punctuation.syntax--tag {
+  color: #96CBFE;
+}
+.syntax--source .syntax--entity.syntax--other.syntax--attribute-name {
+  color: #C6C5FE;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #C6C5FE;
+}
+.syntax--entity.syntax--name.syntax--tag.syntax--namespace,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--namespace {
+  color: #E18964;
+}
+.syntax--meta.syntax--preprocessor.syntax--c {
+  color: #8996A8;
+}
+.syntax--meta.syntax--preprocessor.syntax--c .syntax--keyword {
+  color: #AFC4DB;
+}
+.syntax--meta.syntax--cast {
+  color: #676767;
+}
+.syntax--meta.syntax--sgml.syntax--html .syntax--meta.syntax--doctype,
+.syntax--meta.syntax--sgml.syntax--html .syntax--meta.syntax--doctype .syntax--entity,
+.syntax--meta.syntax--sgml.syntax--html .syntax--meta.syntax--doctype .syntax--string,
+.syntax--meta.syntax--xml-processing,
+.syntax--meta.syntax--xml-processing .syntax--entity,
+.syntax--meta.syntax--xml-processing .syntax--string {
+  color: #494949;
+}
+.syntax--meta.syntax--tag .syntax--entity,
+.syntax--meta.syntax--tag > .syntax--punctuation,
+.syntax--meta.syntax--tag.syntax--inline .syntax--entity {
+  color: #C6C5FE;
+}
+.syntax--meta.syntax--tag .syntax--name,
+.syntax--meta.syntax--tag.syntax--inline .syntax--name,
+.syntax--meta.syntax--tag > .syntax--punctuation {
+  color: #96CBFE;
+}
+.syntax--meta.syntax--selector.syntax--css .syntax--entity.syntax--name.syntax--tag {
+  text-decoration: underline;
+  color: #96CBFE;
+}
+.syntax--meta.syntax--selector.syntax--css .syntax--entity.syntax--other.syntax--attribute-name.syntax--tag.syntax--pseudo-class {
+  color: #8F9D6A;
+}
+.syntax--meta.syntax--selector.syntax--css .syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #8B98AB;
+}
+.syntax--meta.syntax--selector.syntax--css .syntax--entity.syntax--other.syntax--attribute-name.syntax--class {
+  color: #62B1FE;
+}
+.syntax--meta.syntax--property-group .syntax--support.syntax--constant.syntax--property-value.syntax--css,
+.syntax--meta.syntax--property-value .syntax--support.syntax--constant.syntax--property-value.syntax--css {
+  color: #F9EE98;
+}
+.syntax--meta.syntax--preprocessor.syntax--at-rule .syntax--keyword.syntax--control.syntax--at-rule {
+  color: #8693A5;
+}
+.syntax--meta.syntax--property-value .syntax--support.syntax--constant.syntax--named-color.syntax--css,
+.syntax--meta.syntax--property-value .syntax--constant {
+  color: #87C38A;
+}
+.syntax--meta.syntax--constructor.syntax--argument.syntax--css {
+  color: #8F9D6A;
+}
+.syntax--meta.syntax--diff,
+.syntax--meta.syntax--diff.syntax--header {
+  color: #F8F8F8;
+  background-color: #0E2231;
+}
+.syntax--meta.syntax--separator {
+  color: #60A633;
+  background-color: #242424;
+}
+.syntax--meta.syntax--line.syntax--entry.syntax--logfile,
+.syntax--meta.syntax--line.syntax--exit.syntax--logfile {
+  background-color: rgba(238, 238, 238, 0.16);
+}
+.syntax--meta.syntax--line.syntax--error.syntax--logfile {
+  background-color: #751012;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h2 id="spark-server">spark server</h2>
+<p>spark server is a spark job orchestration framework to help schedule statistics jobs regularly (hourly, daily, monthly, etc.). In a word, it is an OLAP system based on Spark.</p>
+<p>Why do we need to use spark server? Spark is a distributed calculating framework which focuses on lower common layer. Users can write any standalone spark application to resolve data analysis problems. However, when it comes to large business analysis requirements, it is less efficient and very hard to schedule many spark jobs one by one. And by spark server, you just focus on the business logical requirements, the server will handle all spark jobs scheduling, performance, functional tests, availability, deployments and reliability.</p>
+<p>Spark server is referenced from spark-jobserver project, but much more than that. It focuses on the &quot;best solution&quot; for spark application, removed unnecessary functions for business analysis. We build it based on the real situations we ever had in bigdata pipeline processing. And we added more useful function modules in it, for example, cache improvement on KVStore(rocksdb, windjammer zetascale, etc.), orchestration configuration module and others.</p>
+<p>Actually, we build up spark server to make an OLAP(On-Line Analytical Processing) system. Spark is great on distribution calculation, it is integrated as the core of spark server. The server includes many other modules such as query engine for statistic results, distributed database for storage, and data models for processing, etc. All the modules are part of spark server.</p>
+<h2 id="features">Features</h2>
+<ol>
+<li>Spark-as-Service, REST support for spark job management, easy interfaces.</li>
+<li>Orchestration of spark jobs, supports to customize business logic as spark jobs dependencies.</li>
+<li>High reliability with cleaver scheduler based on graph algorithm.</li>
+<li>High performance for spark jobs with shared sparkContext and cached dataset.</li>
+<li>Easy to deploy new jobs and data processing pipeline.</li>
+<li>Offered test framework for spark jobs. (the most important for big data test)</li>
+<li>Composed with monitoring tool suite which contains spark metrics and executor process monitoring.</li>
+</ol>
+<h2 id="architecture">Architecture</h2>
+<p>The  server has three modules: API which defines the interface for jobs, the Server as core part and the jobs for customer&#39;s business logic. The core framework is based on the server.</p>
+<h3 id="server-architecture">Server Architecture</h3>
+<p><img src="/Users/king/gits/offline-server/docs/server-component.png" alt="server component diagram"></p>
+<p>Spark Server runs on a single host. It is composed by REST, scheduler, orchestrator, sparkcontext-server.</p>
+<ol>
+<li><p>REST, the interface for interacting with server, manage current spark job plans and running jobs.</p>
+</li>
+<li><p>Orchestrator is designed to manage static spark job plans. Static means the spark job dependencies without timestamp. Spark Job Dependencies are defined in configuration files or database.</p>
+</li>
+<li><p>Scheduler accepts dynamic orchestrations and ad-hoc spark jobs. static spark job plan is submitted by orchestrator with timestamp. So such plans are run by hourly, daily and monthly.</p>
+</li>
+<li><p>The sparkcontext server is spark application driver. It hsa thread pools to start new spark jobs concurrently.</p>
+</li>
+</ol>
+<p><img src="/Users/king/gits/offline-server/docs/server-dependencies.png" alt="server component diagram"></p>
+<p>A Job Dependencies Diagram:</p>
+<ul>
+<li>Job-2, 3, 4 dependents on Job-1;</li>
+<li>Job-5 dependents on Job-2, 3;</li>
+<li>Job-6 dependents on Job-4, 5</li>
+</ul>
+<p>Defined the pipeline requires to run hourly, the orchestrator submit the pipeline with timestamp to scheduler. The scheduler knows which is to be run in sparkContext Server. After all completed, tell orchestrator to prepare next.</p>
+<p>Here if we cache the Job-1 result, Job-2,3,4 could be accelerated and it saves a lot of loading time.</p>
+<h2 id="scenario">Scenario</h2>
+<p>Assume we have an e-commerce website. So we have questions :</p>
+<p>Q1: How many people clicked &quot;Register&quot; Button in last hour. (CountDistinct problem)</p>
+<p>Q2: What&#39;s the cities of top 10 sales last weekend? (Top problem)</p>
+<p>Q3: What&#39;s the amount sales of each product category last day? (GroupBy problem)</p>
+<p>The three problems are the core bottlenecks in big data analysis.</p>
+<p><img src="/Users/king/gits/offline-server/docs/scenario.png" alt="whole picture"></p></body>
+</html>
